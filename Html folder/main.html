@@ -1,0 +1,45 @@
+<html>
+    <head>
+ <link rel="stylesheet" href="/home/neosoft/Documents/sweetsStore project/myfolder/sweet.css">
+    </head>
+
+    <body>
+        <nav>
+        <ul>
+            <li><a href="/home/neosoft/Documents/sweetsStore project/Html folder/home.html"> Home </a> </li>
+            <li><a href="/home/neosoft/Documents/sweetsStore project/Html folder/About.html"> AboutUs </a>  </li>
+            <li><a href="/home/neosoft/Documents/sweetsStore project/Html folder/viewsweets.html"> ViewSweets </a> </li>
+            <li><a href="/home/neosoft/Documents/sweetsStore project/Html folder/ordersweets.html"> OrderSweets  </a> </li>
+        </ul>
+    </nav>
+    <div class="slideshow">
+        <img src=
+"/home/neosoft/Documents/sweetsStore project/Slidefolder/istockphoto-1157621780-1024x1024.jpg" />
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            var pic = $("img");
+            var images = [
+"/home/neosoft/Documents/sweetsStore project/Slidefolder/4px-BW84_n2aGZJPv2Q_uysuQlRKXWAtkzmuAfqDQITcuO7_FYe_adbVn_ntvR810iAe6Tg_GWjNedEmhDFsMWr4Z2FoFHZZfB7U35q-tdiR-RBNpzdNYQ.jpeg",
+"/home/neosoft/Documents/sweetsStore project/Slidefolder/10-Must-Try-Rajbhog-Sweets-870x635.jpg",
+"/home/neosoft/Documents/sweetsStore project/Slidefolder/depositphotos_4168732-stock-photo-in-a-candy-shop.jpg",
+"/home/neosoft/Documents/sweetsStore project/Slidefolder/download (1).jpeg",
+"/home/neosoft/Documents/sweetsStore project/Slidefolder/download.jpeg"
+            ];
+  console.log(images.length);
+            var i = 0;
+            setInterval(function () {
+  
+                // Returns 0, 1, 2, 3, 0, 1, 2, ....
+                i = (i + 1) % images.length;
+                pic.fadeOut(1000,function () {
+                    (pic).attr("src", images[i]);
+                    (pic).fadeIn(1000);
+                });
+            }, 3000);
+        });
+    </script>
+
+    </body>
+</html>

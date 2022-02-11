@@ -1,0 +1,15 @@
+.image{
+    height:100vh;
+    background-size: cover;
+    background-image: url("/home/neosoft/Documents/sweetsStore project/Slidefolder/10-Must-Try-Rajbhog-Sweets-870x635.jpg");
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.heading{
+    font-style: italic;
+    font-weight: bolder;
+    font-size: 100px;
+    color:green;
+
+}
